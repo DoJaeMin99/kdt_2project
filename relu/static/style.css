@@ -1,0 +1,315 @@
+* {
+    font-size: 30px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+/* 
+#contents {
+    height: 2000px;
+} */
+
+
+#chatbot {
+    width: 90%;
+    height: 800px;
+    margin-left: 5%;
+    
+}
+
+#result_form {
+    float: left;
+    width: 50%;
+    position: relative;
+    background-color: pink;
+    height: 100%;
+    animation:slide1 2s;
+}
+
+#chat_form {
+    float: left;
+    width: 50%;
+    position: relative;
+    background-color: skyblue;
+    height: 100%;
+    animation: slide2 2s;
+}
+
+#chatbox {
+    height:755px;
+    background-color: skyblue;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    max-height:100vh;
+    
+}
+
+/* 기능 버튼 */
+.button {
+    display: block;
+    position: relative;
+    float: left;
+    width: 150px;
+    padding-left: 5px;
+    margin: 5px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    transition: all 0.2s ;
+    background: #FFAA40;;
+}
+
+/* 상단 메뉴 */
+a:hover {
+    font-weight: bold;
+}
+
+
+@keyframes slide1 {
+    from{
+        left:-400px;
+    }
+    to{
+        left:0px
+    }
+}
+@keyframes slide2 {
+    from{
+        right:-400px;
+    }
+    to{
+        right:0px
+    }
+}
+
+/* 대문 css */
+#first{
+    background-image: url("/static/door_img/back.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity:0.4;
+    background-repeat:no-repeat;
+    background-size:cover;
+    animation:slide3 7s;
+}
+
+@keyframes slide3 {
+    from {
+        left:-400px;
+        opacity:0;
+    }
+    to{
+        left:0px;
+        opacity:0.4;
+    }
+}
+
+#second{
+    /* background-image: url("/static/door_img/logo.png"); */
+    position: absolute;
+    opacity:1.0;
+    left: 38%;
+    top: 30%;
+    animation: slide4 7s;
+}
+@keyframes slide4 {
+    from {
+        top:-100px;
+        opacity:0;
+    }
+    to{
+        top:30%;
+       opacity:1.0; 
+    }
+}
+
+#third{
+    /* background-image: url("/static/door_img/logo.png"); */
+    position: absolute;
+    left:48%;
+    top: 63%;
+    animation: slide5 7s;
+}
+@keyframes slide5 {
+    from {
+        left:0px
+        
+    }
+    to{
+        left:48%
+        
+    }
+}
+#po{
+    animation:slide6 4s;
+}
+@keyframes slide6{
+    from{
+        left:-500px;
+        opacity:0;
+    }
+    to{
+        left:0px;
+        opacity:1;
+    }
+}
+/* #logo{
+    animation:slide7 4s;
+}
+@keyframes slide7{
+    from{
+       left:-100px;
+    }
+    to{
+        left:0px;
+    }
+} */
+/*   팝업 임시 버튼 스타일  */
+.btn-box .btn-open {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 80px auto 0;
+    line-height: 50px;
+    background: #333;
+    text-align: center;
+}
+
+.btn-box .btn-open span {
+    color: #fff;
+}
+
+ /*   팝업 임시 버튼 스타일  */
+ .btn-box .btn-open {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 80px auto 0;
+    line-height: 50px;
+    background: #333;
+    text-align: center;
+}
+
+.btn-box .btn-open span {
+    color: #fff;
+}
+
+.popup-wrap{
+
+    /* justify-content:center;  */
+    align-items:center;    
+    position:absolute;         
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;              
+    display:none; 
+
+     display:flex;
+    
+    
+  }
+  .popup{
+    width:100%;               
+    max-width:400px;          
+    border-radius:10px;       
+    overflow:hidden;         
+    background-color:#264db5; 
+
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+  }
+
+  .popup-head{
+    width:100%;
+   
+    height:50px;  
+    display:flex; 
+    align-items:center;
+    justify-content:center;
+  }
+  .popup-body{               
+    width:100%;
+    height:100%;
+    background-color:#264db5;
+  }
+  .body-content{              
+    width:100%;
+               
+  }
+  .body-titlebox{            
+       
+    width:100%;
+    height:40px;
+       
+  }
+  .body-contentbox{           
+    word-break:break-word;   
+    overflow-y:auto;          
+    min-height:100px;         
+    max-height:200px;         
+  }
+
+  .popup-foot{                      
+    width:100%;
+    height:50px;
+  }
+  .pop-btn{ 
+              
+    width:50%;                     
+    height:100%;                  
+    justify-content:center;        
+    align-items:center;            
+    float:center;                    
+    color:#ffffff;                 
+    cursor:pointer;                 
+  }
+  .pop-btn.confirm{               
+    border-right:1px solid #3b5fbf; 
+  }
+
+#ani {
+    animation: heartBeat; 
+    animation-duration:10s;
+}
+/* #sendbtn {
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  #sendbtn {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  #sendbtn {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: black;
+  } */
+  
+
+/* 룰렛 관련 css */
+.title{margin-top:50px;text-align:center;}
+
+.box-roulette{position:relative;margin:50px auto;width:500px;height:500px;border:10px solid #ccc;border-radius:50%;background:#ccc;overflow:hidden;}
+.box-roulette .markers{position:absolute;left:50%;top:0;margin-left:-25px;width:0;height:0;border:25px solid #fff;border-left-color:transparent;border-right-color:transparent;border-bottom-color:transparent;z-index:9999;}
+.box-roulette .roulette{position:relative;width:100%;height:100%;overflow:hidden;}
+.box-roulette .item{position:absolute;top:0;width:0;height:0;border:0 solid transparent;transform-origin:0 100%;}
+.box-roulette .label{position:absolute;left:0;top:0;color:#fff;white-space:nowrap;transform-origin:0 0;}
+.box-roulette .label .text{display:inline-block;font-size:20px;font-weight:bold;line-height:1;vertical-align:middle;}
+
+#btn-start{display:block;position:absolute;left:50%;top:50%;margin:-50px 0 0 -50px;width:100px;height:100px;font-weight:bold;background:#fff;border-radius:50px;z-index:9999;cursor:pointer;}
+
+
+
